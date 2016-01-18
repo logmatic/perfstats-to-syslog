@@ -65,7 +65,7 @@ You should see something like:
 [syslog]
 host = 127.0.0.1
 port = 514
-pollingInSec = 60
+pollingInSec = 5
 
 [general]
 paths = root:/
@@ -73,7 +73,7 @@ paths = root:/
 
 You can configure:
 - the host and port of the syslog agent
-- the polling period => 60 seconds by default
+- the polling period => 5 seconds by default
 - paths of the disks you want to monitor
 
 Ready?
