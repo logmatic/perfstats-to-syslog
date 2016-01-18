@@ -1,6 +1,6 @@
 # perfstats-to-syslog
 
-perfstats-to-syslog is a daemon which collects system performance (CPU, Memory, Disk and Network) statistics periodically and streams it in clean JSON format to a syslog agent
+perfstats-to-syslog is a daemon which collects system performance statistics (CPU, Memory, Disk and Network) periodically and streams it in clean JSON format to a syslog agent
 It runs over Linux and Windows environments.
 
 ## How to install?
