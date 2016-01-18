@@ -10,7 +10,7 @@ The following instructions is working only against Linux environments.
 ### Dependencies
 
 ```
-$ sudo apt-get install python-dev
+$ sudo apt-get install python-dev python-pip
 $ sudo pip install psutil
 ```
 
