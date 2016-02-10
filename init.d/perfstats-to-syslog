@@ -1,0 +1,17 @@
+#!/sbin/runscript
+
+depend() {
+	need syslog-ng
+}
+
+start() {
+	ebegin "Starting Perfstats-to-syslog"
+	start-stop-daemon --start --background --pidfile /run/perfstats-to-syslog.pid --make-pidfile --exec /opt/perfstats-to-syslog/perfstats-to-syslog.py
+	eend
+}
+
+stop() {
+	ebegin "Stopping Perfstats-to-syslog"
+	start-stop-daemon --stop --pidfile /run/perfstats-to-syslog.pid
+	eend
+}
