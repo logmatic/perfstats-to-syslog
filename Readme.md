@@ -18,9 +18,15 @@ $ sudo pip install psutil
 
 Drop `perfstats-to-syslog.cfg` and `perfstats-to-syslog.py` into the `/opt/perfstats-to-syslog` directory.
 
-### Install the upstart service
+### Set up the service
 
-Drop `perfstats-to-syslog.conf` into the `/init` directory.
+#### With Upstart (check `/upstart` directory):
+
+Drop `perfstats-to-syslog.conf` into the `/etc/init` directory.
+
+#### Or with init.d (check `/init.d` directory):
+
+Drop `perfstats-to-syslog` into the `/etc/init.d` directory.
 
 ## Don't forget to configure your syslog agent! (Rsyslog or Syslog-NG)
 
@@ -80,9 +86,14 @@ Ready?
 
 ### Start the service
 
-To start the service:
+To start the service with upstart:
 ```
 $ sudo start perfstats-to-syslog
+```
+
+And with init.d:
+```
+$ sudo /etc/init.d/perfstats-to-syslog start
 ```
 
 As configured the service gets started at every reboot of your machine.
