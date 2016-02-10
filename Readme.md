@@ -14,7 +14,7 @@ $ sudo apt-get install python-dev python-pip
 $ sudo pip install psutil
 ```
 
-### Install the binaries
+### Install script & configuration files
 
 Drop `perfstats-to-syslog.cfg` and `perfstats-to-syslog.py` into the `/opt/perfstats-to-syslog` directory.
 
