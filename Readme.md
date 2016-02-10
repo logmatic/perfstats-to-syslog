@@ -91,7 +91,7 @@ To start the service with upstart:
 $ sudo start perfstats-to-syslog
 ```
 
-And with init.d:
+Or if you installed the service with init.d:
 ```
 $ sudo /etc/init.d/perfstats-to-syslog start
 ```
