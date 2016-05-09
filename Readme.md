@@ -1,4 +1,5 @@
 # perfstats-to-syslog
+*Link to the [Logmatic.io documentation](http://doc.logmatic.io/docs/perfstats-cpu-memory-disk-network)*
 
 perfstats-to-syslog is a daemon which collects system performance statistics (CPU, Memory, Disk and Network) periodically and streams it in clean JSON format to a syslog agent
 It runs over Linux and Windows environments.
