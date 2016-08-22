@@ -1,4 +1,4 @@
-#!/usr/local/bin/python
+#!/usr/bin/env python
 
 #
 # Copyright (c) 2012-2015 Focusmatic SAS. All rights reserved.
