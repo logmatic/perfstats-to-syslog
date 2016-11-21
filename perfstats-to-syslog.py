@@ -146,7 +146,7 @@ class AReporter(TaskThread):
         except Exception as e:
             # raise e
             self.logger.error("Error during report processing:" + e.message)
-            # reset the reporter to ensure
+            # reset the reporter 
             self.prestart()
 
     @staticmethod
