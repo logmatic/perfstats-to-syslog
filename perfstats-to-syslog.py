@@ -145,7 +145,9 @@ class AReporter(TaskThread):
 
         except Exception as e:
             # raise e
-            self.logger.error(e.message)
+            self.logger.error("Error during report processing:" + e.message)
+            # reset the reporter to ensure
+            self.prestart()
 
     @staticmethod
     def time_in_s():
